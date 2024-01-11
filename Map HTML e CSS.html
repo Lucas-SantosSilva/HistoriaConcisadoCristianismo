@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Historia Concisa do Cristianismo </title>
+    </head>
+    
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+            font-family: 'Poppins', 'san-serif';
+            box-sizing: border-box;  
+           
+        }
+        
+        body{
+            background: #0B1E2E;
+            border-width: 10px;
+            border-style: double;
+            Border-color: #ff8c3b ;
+        }
+        
+        .timeline {
+            position: relative;
+            max width: 1200px;
+            margin: 100px auto;
+        }
+        
+        .container {
+            padding: 10px 50px;
+            position: relative;
+            width: 50%;
+            animation: movedown 1s linear forwards;
+            opacity: 0;
+        }
+        
+        @keyframes movedown {
+            0%{
+                opacity: 1;
+                transform: translateY(-30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        
+        
+        .container:nth-child(1){
+            animation-delay:0s;
+        }
+        
+        .container:nth-child(2){
+            animation-delay:1s;
+        }
+        
+        .container:nth-child(3){
+            animation-delay:2s;
+        }
+        
+        .container:nth-child(4){
+            animation-delay:3s;
+        }
+        
+        .container:nth-child(5){
+            animation-delay:4s;
+        }
+        
+        .container:nth-child(6){
+            animation-delay:5s;
+        }
+        
+        .container:nth-child(7){
+            animation-delay:6s;
+        }
+        
+        .container:nth-child(8){
+            animation-delay:7s;
+        }
+        
+        .container:nth-child(9){
+            animation-delay:8s;
+        }
+        
+        .container:nth-child(10){
+            animation-delay:9s;
+        }
+        
+        .container:nth-child(11){
+            animation-delay:10s;
+        }
+        
+        .container:nth-child(12){
+            animation-delay:11s;
+        }
+        
+        .container:nth-child(13){
+            animation-delay:12s;
+        }
+        
+        .text-box {
+            padding: 20px 30px;
+            background: #FFFFFF;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+        
+        }
+        
+        .left-container{
+            left:0;
+        }
+        
+        .right-container{
+            left: 50%;
+        }
+        
+        .container img{
+            position: absolute;
+            width: 40px;
+            border-radius: 50px;
+            right: -20px;
+            top: 32px;
+            z-index: 10;
+        
+        }
+        
+        .right-container img{
+             left: -20px;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background: #fff;
+            top: 0px;
+            left: 50%;
+            margin-left: -3px;
+            z-index:-1;
+            animation: moveline 6s linear forwards;
+        
+        }
+        
+        @keyframes moveline {
+            0%{
+                height:0;
+            }
+            100% {
+                height: 100%;
+            }
+        }
+        
+        
+        
+        .text-box h2{
+            font-weight: 600;
+        }
+        
+        .text-box small{
+            display: inline-block;
+            margin-bottom: 15px;
+            
+        }
+        
+        .left-container-arrow {
+        
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 20px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid #fff;
+            right: -15px;
+        
+        }
+        
+        .right-container-arrow {
+        
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid #fff;
+        left: -15px;
+        
+        }
+        
+        .vignette {
+        
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: #ff0;        
+        
+        }
+        
+        .world-map {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1em;
+            position: relative;
+
+        }
+
+        .world-map image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+        }
+
+        .pin-jerusalem {
+            background: #FF3333;
+            position: absolute;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%
+
+        }
+
+        .pin-jerusalem::before{
+            content:'';
+            background: #FF3333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-jerusalem span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 6.4%;
+            top: 19%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-jerusalem {
+            top: 3.1%;
+            left: 53%;
+        }
+
+        .pin-roma {
+            background: #FF3333;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-roma::before{
+            content:'';
+            background: #FF3333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-roma span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-roma {
+            top: 2.83%;
+            left: 47.2%;  
+        }
+
+        .pin-milao {
+            background: #FF3333;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-milao::before{
+            content:'';
+            background: #FF3333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-milao span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-milao {
+            top: 2.75%;
+            left: 46.2%;  
+        }
+
+        .pin-niceia {
+            background: #FF3333;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-niceia::before{
+            content:'';
+            background: #FF3333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-niceia span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 15%;
+            top: 13%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-niceia {
+            top: 2.94%;
+            left: 51.3%;  
+        }
+
+        .pin-tessalonica {
+            background: #FF3333;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-tessalonica::before{
+            content:'';
+            background: #FF3333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-tessalonica span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-tessalonica {
+            top: 2.9%;
+            left: 50%;  
+        }
+
+        .pin-istambul {
+            background: #339933;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-istambul::before{
+            content:'';
+            background: #339933;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-istambul span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 15%;
+            top: 17%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-istambul {
+            top:2.87%;
+            left:51.4%;
+        }
+
+        .pin-clermont {
+            background: #339933;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-clermont::before{
+            content:'';
+            background: #339933;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-clermont span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-clermont {
+            top:2.7%;
+            left:45%;
+        }
+
+        .pin-wittemberg {
+            background: #3333FF;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-wittemberg::before{
+            content:'';
+            background: #3333FF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-wittemberg span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 10%;
+            top: 8%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.4em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-wittemberg {
+            top:2.51%;
+            left:47.3%;
+        }
+
+        .pin-trento {
+            background: #3333FF;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-trento::before{
+            content:'';
+            background: #3333FF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-trento span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 5%;
+            top: 13%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-trento {
+            top:2.72%;
+            left:47%;
+        }
+
+        .pin-londres {
+            background: #FFFF33;
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 50%
+        }
+
+        .pin-londres::before{
+            content:'';
+            background: #FFFF33;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-londres span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 5%;
+            top: 13%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.3em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-londres {
+            top:2.53%;
+            left:43.7%;
+        }
+
+        .pin-vaticano {
+            background: #FFFF33;
+            position: absolute;
+            width: 0.7em;
+            height: 0.7em;
+            border-radius: 50%
+        }
+
+        .pin-vaticano::before{
+            content:'';
+            background: #FFFF33;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation:pulse 1.3s ease-in-out infinite;
+        }
+
+        .pin-vaticano span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 10%;
+            top: 17%;
+            transform: translateY(-50);
+            background: #fff;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.1em; 
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        .pin-vaticano {
+            top:2.90%;
+            left:47.5%;
+        }
+
+        .title h2 {
+        text-align: center;
+        filter: url(#fire);
+        position: relative;
+        color: #ffeb3b;
+        font-weight: 600;
+        font-size: 4em; 
+        -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        svg{
+            width: 0;
+            height: 0;
+        }
+
+        .light
+        {
+            position: fixed;
+            top: 0;
+            Left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20%);
+            z-index: 999; 
+
+        }
+
+        h2 {
+            color: #ff8c3b ;
+            -webkit-box-reflect: below -30px linear-gradient
+        (transparent, #e1ce3fa7);
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #ff8c3b,
+                    0 0 80px #ff8c3b,
+                    0 0 160px #ff8c3b,
+                    0 0 240px #ff8c3b;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+<audio autoplay>
+     <source src="song/O Gladsome Light.mp3" type="audio/mp3">
+</audio>
+
+<!--<iframe style="display: none;"  width="560" height="315" src="https://www.youtube.com/embed/X5LiKWtwA28?si=4KQA6MCmQXUhTR0B?rel-0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+!-->
+
+<div class="light"></div>
+<script type="text/javascript">
+        var pos = document.documentElement;
+        pos.addEventListener('mousemove', e =>{
+            pos.style.setProperty('--x', e.clientX + 'px')
+            pos.style.setProperty('--y', e.clientY + 'px')
+        })
+         
+</script>
+
+    <body>
+
+        <div class="title">
+            <h2>HISTÓRIA CONCISA DO CRISTIANISMO</h2>
+        </div>
+        <svg>
+            <filter id="fire">
+                <feTurbulence id="turbulence" baseFrequency="0.1.0.1"
+                numOctaves="2" seed="3">
+                    <animate attributeName="baseFrequency" dur="10s"
+                    value="0.1.0.1;0.12 0.2" reapeatCount="indefinite"></animate>
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" scale="20">
+                </feDisplacementMap>
+            </filter>
+        </svg>
+
+        <div class="world-map">
+            <img src="Mapa/worldmap.png">
+            <div class= "pin-jerusalem">
+                <span> 1,2 </span>
+            </div>
+            <div class="pin-roma">
+                <span>3</span>
+            </div>
+            <div class="pin-milao">
+                <span>4</span>
+            </div>
+            <div class="pin-niceia">
+                <span>5</span>
+            </div>
+            <div class="pin-tessalonica">
+                <span>6</span>
+            </div>
+            <div class= "pin-istambul">
+                <span>7</span>
+            </div>
+            <div class="pin-clermont">
+                <span>8</span>
+            </div>
+            <div class="pin-wittemberg">
+                <span>9</span>
+            </div>
+            <div class="pin-trento">
+                <span>10</span>
+            </div>
+            <div class="pin-londres">
+                <span>11</span>
+            </div>
+            <div class="pin-vaticano">
+                <span>12</span>
+            </div>
+
+        <div class = "timeline" > 
+
+            <div class = "container right-container">
+                <img src= "cores da timeline/red.png">
+                <div class = "text-box">
+                    <h2>LUZ RADIANTE</h2>
+
+                    <small></small>
+
+                    <p>Tudo começa no próximo oriente, na Palestina; na ocasião uma região pobre, mas também um local estratégico para o comércio.</p>
+
+                    <p>Depois de diversas profecias proferidas a cerca de um messias feitas pelos profetas de Israel, como no caso de  Isaías, que dizia: </p>
+                    
+                    <p>“O Espírito do Soberano está sobre mim, porque ele me ungiu para pregar as boas novas aos pobres. Ele me enviou para proclamar a liberdade aos presos e recuperação da vista aos cegos, para libertar os oprimidos e proclamar o ano da graça do Senhor”</p>
+                    
+                    <p>Surge então um galileu, que em Nazaré (local onde havia sido criado grande parte de sua vida) entra na sinagoga e faz a proclamação escriturística do Shabat (dia de santidade e descanso na cultura judaica) justamente deste trecho do livro de Isaías, e diz:  </p>
+                    
+                    <p>“Hoje se cumpriu a Escritura que vocês acabaram de ouvir”. Seu nome era Jesus.</p>
+                    
+                    <p>Este nazareno percorreu boa parte da Palestina anunciando o Reino de Deus como um “Evangelho”, ou seja, uma boa notícia, e que este reino estava próximo: </p>
+                    
+                    <p>"O tempo é chegado", dizia ele. "O Reino de Deus está próximo. Arrependam-se e 
+                    creiam nas boas-novas!” </p>
+                    
+                    <p>Talvez o cerne de sua mensagem esteja descrito na narrativa conhecida como “O Sermão da Montanha”, nele existe uma certo sentido disruptivo na mensagem de Jesus com o que estava sendo pregado pelos Judeus daquele contexto. </p>
+                    
+                    <p>Na interpretação da lei mosaica dominante, o amor ao próximo se dizia respeito às relações de proximidade, no entanto, a pregação de Jesus coloca esse amor no mesmo plano de Deus, que se concretiza no: amor ao inimigo, amor aos estrangeiro, e amor aos pecadores; ou seja, em um amor incondicional. Desta forma, Cristo apresenta a forma comportamental dos bem-aventurados de seu Reino.</p>
+                    
+                    <p>Naturalmente, as ordens dominantes da época, que estavam muito pautadas em um sistema religioso de pureza legal, e que separava socialmente os que publicamente viviam em conformidade a um código de pureza ritual, e os  que eram tidos como impuros por não seguir tais códigos, começaram por perseguir Jesus, culminando em na sua crucificação no período da páscoa Judaica. </p>
+                    
+                    <p>Todavia, apesar de parecer haver em certo sentido uma descontinuação da interpretação dominante sobre algumas questões teológicas da época, o próprio Jesus afirmou:</p>
+                    
+                    <p>“Não pensem que vim abolir a Lei ou os Profetas; não vim abolir, mas cumprir”</p>
+                    
+                    <p>Dando a entender que o movimento que ele começou não se trata em lato sensu de uma ruptura com a tradição que havia sido transmitida pelos judeus, mas um cumprimento e o resgate dela. </p>
+                    
+                    <p>No terceiro dia depois após sua morte, o relato bíblico narra que Jesus apareceu ressuscitado a alguns de seus discípulos mais próximos, e lhes disse:</p>
+                    
+                    <p>"Está escrito que o Cristo haveria de sofrer e ressuscitar dos mortos no terceiro dia,e que em seu nome seria pregado o arrependimento para perdão de pecados a todas as nações, começando por Jerusalém. Vocês são testemunhas destas coisas. Eu lhe envio a promessa de meu pai; mas fiquem na cidade até serem revestidos do poder do alto”. </p>
+                    
+                    <p>Depois, a narrativa diz que Jesus os levou até as proximidades de Betânia, ergueu as
+                    mãos e os abençoou; e ainda os abençoando, ele os deixou e foi levado ao céu.
+                    Os que ali estavam continuaram com os olhos fixos no céu enquanto ele subia, mas, de repente, surgiram dois homens vestido de branco que lhes disseram:</p>
+                    
+                    <p>“Galileus, porque vocês estão olhando para o céu? Este mesmo Jesus, que dentre vocês foi elevado aos céus, voltará da mesma forma como viram subir”. </p>
+                    
+                    
+                    <p>Diante disso, será retratado aqui nesta linha temporal de forma sintetizada alguns dos eventos mais marcantes no desenvolvimento do cristianismo, e como isso afetou e continua a afetar aqueles que acreditam naquilo que foi proclamado há milênios atrás, porque acreditam que se cumpriu aquilo que Isaías havia dito: “O povo que andava nas trevas viu uma grande luz; sobre os que habitavam na terra da sombra da morte resplandeceu a luz”, e essa luz uma vez acesa, jamais será apagada.  </p>
+                    
+                    
+                    <span class= "right-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src= "cores da timeline/red.png">
+                <div class = "text-box">
+                    <h2>1 - PENTECOSTES </h2>
+                    <small><b>33 d.C (Jerusalém, Israel)</b></small>
+
+                    <p>Depois da suposta subida de Jesus aos céus, os judeus que caminhavam ao lado de Jesus e seus apóstolos (enviados) ficaram à espera em Jerusalém que a promessa fosse cumprida.</p>
+
+                    <p>Os apóstolos nessa altura eram: Pedro, João, Tiago, André, Filipe, Tomé, Bartolomeu, Mateus, Tiago (filho de Alfeu), Simão (o zelote) , e Judas (filho de Tiago). Depois tiveram de acrescentar mais uma pessoa ao apostolado; um indivíduo chamado Matias, porque o apóstolo, Judas, que foi anterior a ele, havia morrido depois de trair a Cristo. </p>
+                    
+                    <p>Todos eles se reuniam regularmente para fazer orações, inclusive os familiares de Jesus e sua mãe, Maria, que tinham grande participação nestas reuniões.  </p>
+                    
+                    <p>O relato bíblico narra que certo dia, todos estavam reunidos no mesmo lugar, e de repente, veio do céu um som, como de um vento muito forte, e encheu toda a casa na qual estavam assentados. Todos ficaram cheios do Espírito Santo e começaram a falar noutras línguas. </p>
+                    
+                    <p>Nesta época, havia em Jerusalém judeus devotos de todas as partes do mundo conhecido, e ouvindo eles o som, se juntaram para ver o que estava acontecendo. Quando chegaram, perceberam que estavam a ouvir a pregação do evangelho em suas línguas maternas. </p>
+                    
+                    <p>A narrativa bíblica descreve que Pedro se levantou naquele dia com os Onze apóstolos e  dirigiu a multidão um discurso a respeito do envio do Espírito Santo, dizendo que isso já havia sido predito pelo profeta Joel na tradição judaica, e sobre o mistério da salvação que havia acontecido através do sacrifício de Cristo. Naquele dia se juntaram à comunidade cerca de três mil pessoas. </p>
+                    
+                    <p>Eles continuaram a se reunir todos os dias no pátio do templo, e continuaram com práticas de vida comum. Conhecidos pelo gesto comunitário da fração do pão, viviam louvando a Deus e tendo a simpatia de todo o povo.</p>
+                    
+
+                    <span class= "left-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container right-container ">
+                <img src= "cores da timeline/red.png">
+                <div class = "text-box">
+                    <h2>2 - CONCÍLIO DE JERUSALÉM</h2>
+                    <small><b>51 d.C (Jerusalém, Israel)</b></small>
+                    <p>As primeiras comunidades cristãs eram compostas apenas por judeus que viviam em um contexto tipicamente judaico com toda a sua própria diversidade.</p>
+ 
+                    <p>Depois de uma visita de Pedro a casa de Cornélio, que era um oficial do exército romano que ocupava Cesareia, em Jafa, que resultou no derramamento do Espírito Santo sobre ele e os seus mais próximos, e no batismo com água dos mesmos; gerou-se  então um debate no interior do cristianismo nascente acerca das condições dos novos membros provenientes de outras culturas, porque Cornélio e os que estavam em sua casa foram batizados sem a mediação dos sinais da Antiga Aliança com o povo de Israel - a circuncisão. </p>
+
+                    <p>Para resolver isso realizou-se um encontro com os apóstolos e presbíteros, e depois de se ter ouvido os testemunhos de Pedro, Paulo e Barnabé relacionados a esta questão, Tiago tomou a palavra e realizou um discurso que apesar de deixar algumas restrições para os gentios (não judeus) convertidos, deixa muito claro uma visão de integração das nações na Aliança de Deus com o povo de Israel. </p>
+
+                    <span class= "right-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src= "cores da timeline/red.png">
+                <div class = "text-box">
+                    <h2>3 - ÉDITO DE DÉCIO</h2>
+                    <small><b>249 d.C (Roma, Itália)</b></small>
+
+                    <p>Já havia acontecido algumas perseguições aos cristãos desde o incêndio de Roma que aconteceu em 64 d.C, sob o governo de Nero (37 d.C - 68 d.C ), que culpou os cristão de terem provocado o incêndio; mas não só por esse acontecimento. </p>
+
+                    <p>Nos dois primeiros séculos os romanos realizaram de forma esporádica uma política persecutória contra grupos considerados desviantes e exóticos, no entanto, o caso dos cristãos pode se distinguir pelo facto de que alguns assuntos relacionados a eles chegavam até os ouvidos dos imperadores, enquanto nos demais casos normalmente o assunto ficava sob a responsabilidade dos governantes provinciais.  </p>
+                    
+                    <p>O primeiro decreto oficial que partiu da casa imperial contra os cristãos do império romano foi o Édito do Imperador Décio (201 d.C - 251 d.C). O contexto no qual esse decreto surgiu foi de um período de grande instabilidade que começou em meados do ano 235 e foi até o ano 284. </p>
+                    
+                    <p>Nessa situação, o império entendeu que de alguma forma os problemas estavam ligados à religião, e por isso começaram a ser mais cautelosos em suas práticas religiosas, obrigando todos os cidadão a seguirem elas, e perseguindo aqueles que não as seguissem. </p>
+                    
+                    <p>Não se pode dizer que estas perseguições para tentar conter o avanço do cristianismo foram eficazes, visto que em 260-261,o imperador Galiano (218 d.C - 268 d.C), filho de Valeriano revogou os decretos anticristãos. </p>
+                    
+                    <p>As perseguições só foram retomadas pelo imperador Diocleciano (244 d.C - 311 d.C), mas mesmo essa, não fora capaz de conter a expansão da religião. </p>
+                    
+                    <span class= "left-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container right-container">
+                <img src= "cores da timeline/red.png">
+                <div class = "text-box">
+                    <h2>4 - ÉDITO DE MILÃO</h2>
+                    <small><b>313 d.C (Milão, Itália)</b></small>
+
+                    <p>O Édito de Milão foi decretado na cidade de Mediolanum (atual Milão) no dia 13 de junho de 313 d.C pelo imperador Constantino (272 d.C - 337 d.C) - o mesmo que posteriormente estipulou o descanso dominical e a proibição do sacrifício sanguinário pelos pagãos - e garantia a liberdade de culto dos cristão em todo império romano e a devolução de todos os bens confiscados no período de perseguição. As cópias que são conhecidas do decreto são as de Licínio (263 d.C - 325 d.C) nas partes orientais do império.  </p>
+
+                    <p>O motivo mais conhecido para essa decisão de Constantino está ligado a sua conversão ao cristianismo, mas ainda existe dúvida sobre a autenticidade da conversão do imperador, porque sendo um homem de Estado, muitos pensam que talvez sua decisão pela doutrina cristã tenha sido pautada principalmente numa estratégia de maior unificação do império, visto que já haviam cristãos em toda a geografia do império e eles também já estavam em todos os setores de atividade da civilização romana. </p>
+
+                    <p>De qualquer forma, o edito promulgado é de extrema importância na história do cristianismo porque marca o início de uma aproximação entre o império e o cristianismo, que vai culminar posteriormente no Édito de Tessalônica. </p>
+                   
+                    <span class= "right-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src= "cores da timeline/red.png">
+                <div class = "text-box">
+                    <h2>5 - CONCÍLIO DE NICÉIA</h2>
+                    <small><b>325 d.C (Iznik, Turquia)</b></small>
+
+                    <p>O primeiro concílio ecumenico (com bispos de diferentes regiões) convocado pelo imperador Constantino aconteceu em Niceia da Bitínia (atual Iznik na Turquia), na região de Bizâncio,  no dia 25 julho de 325 d.C, e tinha como finalidade resolver basicamente duas questões: a primeira em relação a data de comemoração da páscoa, e a segunda relacionada a uma doutrina considerada herética, desenvolvida pelo  presbítero de Alexandria, Ario (256 d.C - 336 d.C), que tinha como um dos princípios a crença de que para ser um ser divino era necessário não ser criado e nem gerado, negando assim a divindade de Cristo. </p>
+
+                    <p>De acordo com Santo Atanásio de Alexandria (296 d.C - 373 d.C) e Eusébio de Cesareia (265 d.C - 339 d.C) o concílio contou com 300 participantes, sendo que consta que apenas 5 clérigos eram do Ocidente. Dentre eles, se encontravam os representantes do bispo de Roma e Ósio de Córdova (257 d.C - 359 d.C) - supostamente foi ele quem desempenhou o cargo de presidência do concílio - isso evidencia o contraste que ainda havia entre o cristianismo já consolidado no oriente, e o ainda propagado em menor escala, cristianismo do ocidente. </p>
+
+                    <p>Quanto a data de celebração da Páscoa, fixou-se neste concílio que seria no domingo seguinte ao dia 14 do mês de Nisan (de acordo com o calendário judaico) , assim como já estava sendo feito em diversas igrejas, como por exemplo, em Roma. </p>
+
+                    <p>No que concerne a doutrina ariana, foi preciso fixar uma formulação dogmática acerca da doutrina da Trindade. Foi então elaborado pelo diácono Atanásio de Alexandria e pelos bispos Marcelo de Ancira e Eustáquio de Antioquia o conhecido símbolo de fé de Niceia, que determinava que o Verbo (como Cristo também é conhecido) foi “gerado, não feito, consubstancial ("homo-ousios", no grego) ao Pai”, ou seja, afirmaram que Jesus possui a mesma substância do Pai que é Deus. </p>
+
+                    <p>Além disso foram aprovados 20 cânones disciplinares, entre eles, um que enfatizava o dever de obediência dos bispos metropolitas de Tebaida, da  Líbia e do Egito ao bispo de Alexandria. </p>
+
+                    <span class= "left-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container right-container">
+                <img src= "cores da timeline/red.png">
+                <div class = "text-box">
+                    <h2>6 - ÉDITO DE TESSALÔNICA</h2>
+                    <small><b>380 d.C (Tessalônica, Itália)</b></small>
+
+                    <p>Em 27 de fevereiro de 380 d.C, o imperador romano Teodósio I (347 d.C - 395 d.C), o imperador do ocidente, Graciano (359 d.C - 383 d.C), e o co-governante júnior de Graciano, Valentino II (371 d.C - 392 d.C),  promulgaram o Édito de Tessalônica, declarando com base na ortodoxia Nicéia, e do concílio de constantinopla (onde o Símbolo Niceno foi aprovado e o Credo Niceno-Constantinopolitano tomou sua forma final), o cristianismo como a única religião legítima do Império Romano. </p>
+
+                    <p>Depois da emissão do decreto, Teodósio trabalhou duramente na tentativa de suprimir todos os tipos de cristianismo não-nicenos, especialmente o arianismo. Exemplo disso foi que em janeiro do ano seguinte, havia sido promulgado outro édito que proibia os hereges de se estabelecerem nas cidades do império, e nos anos 392 e 394, confiscou os locais de culto dos grupos hereges. </p>
+
+                    <p>Esse edito foi de grande importância porque teve a influência do Papa Dâmaso I (305 d.C - 384 d.C) - demonstrando mais uma vez a enorme aproximação entre clero e a política imperial- e porque reafirma uma única expressão de fé apostólica sendo legítima no Império Romano, uma “católica” (universal) e “ortodoxa” (isto é, correta no ensino). </p>
+
+                    <p>Sem contar que é neste Édito que também fica claro que “o Pai, o Filho e o Espírito Santo” são “uma só divindade”, porque até então não havia sido dito que o Espírito Santo era também homo-ousios com o Pai. </p>
+
+                    <p>Esse foi um evento decisivo na história do cristianismo por demonstrar a expansão e a força  que a religião tomou; de religião perseguida, se tornou a religião imperial. </p>
+
+
+                    <span class= "right-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src= "cores da timeline/green.png">
+                <div class = "text-box">
+                    <h2>7 - GRANDE CISMA</h2>
+                    <small><b>1054 d.C (Istambul, Turquia)</b></small>
+
+                    <p>O chamado “Grande Cisma” que houve em 1054 refere-se à ruptura entre as relações da Igreja oriental, conhecida como Igreja Ortodoxa, com a ocidental, a Igreja Católica. </p>
+
+                    <p>A distanciação foi um evento que aconteceu de forma gradual, o ocidente estava cada vez mais sendo influenciado pelos povos germanos, enquanto o oriente ainda estava muito ligado à tradição do cristianismo helenístico. </p>
+                    
+                    <p>Mas a situação se agravou quando Miguel Cerulário (1000 d.C - 1059 d.C) se tornou o patriarca de Constantinopla, em 1043, porque começou-se uma campanha contra as igrejas latinas que estavam em Constantinopla, que tinha como pano de fundo um debate sobre a natureza do Espírito Santo (porque para os bizantinos o Espírito Santo provinha do Pai e não do Filho). </p>
+                    
+                    <p>Nisto, Roma envia o cardeal Humberto Candida (1015 d.C - 1061 d.C) em 1054 na tentativa resolver os problemas, no entanto, a visita resultou na excomunhão do patriarca, que significava de modo geral a excomunhão de toda a igreja oriental, e o Sínodo promovido promovido por Miguel Cerulário responderam da mesma maneira a Roma. </p>
+                    
+                    <p>Mesmo com algumas diferenças doutrinárias e com a não aceitação da supremacia do papa de Roma, aos olhos do Ocidente a igreja do Oriente não deixou de ser cristã; de acordo com Jacques le Goff, a falta de compreensão para com a igreja bizâncio estava relacionada “pela cobiça  e pela inveja dos 'romanos', um povo bárbaro e incivilizado que via com maus olhos a riqueza dos 'gregos' civilizados”. </p>
+                    
+
+                    <span class= "left-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container right-container">
+                <img src= "cores da timeline/green.png">
+                <div class = "text-box">
+                    <h2>8 - CONCÍLIO DE CLERMONT</h2>
+                    <small><b>1095 d.C (Clermont, França)</b></small>
+                    <p>Foi no Concílio de Clermont em 1095 que o papa Urbano II (1042 d.C - 1099 d.C) convocou a primeira cruzada, e renovou a Paz de Deus (proclamadas pelos líderes religiosos com o intuito de limitar as guerras e assaltos para proteger os incapazes de se defender do banditismo). </p>
+
+                    <p>Isso ocorreu porque a partir de 636, Jerusalém se tornou uma cidade sob o poder dos mulçumanos, mas ainda permitiam a peregrinação dos cristãos aos Lugares Santos da Palestina; no entanto, os turcos Seljúcidas, que eram uma das várias tribos da Ásia Central que tinham se tornado mulçumanos no século XI, estavam a mover-se para sul e oeste colocando em perigo o Império Bizantino. </p>
+
+                    <p>Em 1071 os turcos derrotaram os bizantinos na batalha de Mankizinkert fazendo com que o imperador Miguel VII (1050 d.C - 1090d.C) solicitasse o apoio de Roma. Além disso, Jerusalém também é dominada pelos turcos em 1078, Antioquia em 1085 e Nicéia em 1092. Outro pedido de apoio foi feito, neste caso pelo imperador Aleixo I (1056 d.C - 1118 d.C) ao Papa Urbano II em 1095, desta vez, concedido através do Concílio. </p>
+
+                    <p>A ideia Ocidental era que o movimento pela paz fosse realizado para proteger os que estavam em perigo, prestando ajuda aos irmãos do Oriente; para eles se tratava de  uma luta em defesa da cristandade, logo, participar dela era agradável a Deus. </p>
+
+                    <p>Esse Concílio teve uma grande resposta popular, e demonstrou que a Europa Ocidental havia obtido enfim uma capacidade institucional, organizacional eclesiástica e secular forte o suficiente para planejar entrar em um conflito como este. </p>
+
+
+                    <span class= "right-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src= "cores da timeline/blue.png">
+                <div class = "text-box">
+                    <h2>9 - REFORMA PROTESTANTE</h2>
+                    <small><b>1517 d.C (Wittenberg, Alemanha)</b></small>
+
+                    <p>Foi em Wittenberg, no ano de 1517, que o até então monge, Martinho Lutero (1483 d.C - 1546 d.C), afixou na porta da Catedral de Wittenberg 95 teses que colocaram em causa alguns dos pilares da Igreja Católica como: a existência do Purgatório, o culto da Virgem e dos santos, a autoridade de Roma, entre outros. </p>
+
+                    <p>No entanto, apesar de o papa Leão X (1475 d.C - 1521 d.C) concordar com 54 das 95 sentenças de Lutero, ele pediu na bula chamada “Exsurge Domine”, que o monge agostiniano se retratasse quanto às outras 41 no prazo de 70 dias. Terminado o prazo no dia 10 de dezembro de 1520, Lutero queimou sua cópia da Bula juntamente com os seus volumes do Código de Direito Canônico.  </p>
+
+                    <p>Lutero ganha a admiração de humanistas como Ulrich von Hutten (1488 - 1523), e de figuras da nobreza, como  o eleitor da Saxônia, Frederico III (1463 -1525), que lhe concedeu em 1521 abrigo no castelo de Wartburg, onde permitiu que Lutero pudesse se dedicar a uma de suas obras mais marcantes: a tradução da Bíblia para o alemão, que foi editada em 1534. </p>
+
+                    <p>Depois de algum tempo, começaram a surgir igrejas no território alemão ligadas ao estado e fomentadas pelos príncipes com doutrinas escritas por Lutero. Juntamente com esses acontecimentos, a Europa vai reconhecendo a visão reformista, resultando em uma crescente difusão em países escandinavos, na Prússia e nos países bálticos. </p>
+
+                    <p>Com isso, vão se formando outras correntes reformistas, como é o caso do calvinismo, cujo teólogo fundador, foi o francês João Calvino (1509 - 1564).<br> Calvino teve que sair de Paris em 1533 após aceitar as doutrinas de Lutero,  se refugiando por algum tempo em Basileia e depois em Genebra, onde tornou um importante centro de teologia e implantou o calvinismo que se espalharia pela Suíça, Países Baixos, França e ao norte da Escócia. </p>
+
+                    <p>A Inglaterra também rompeu os laços com a doutrina católica, mas de uma forma diferente, já que um dos motivos para o rompimento estava ligado ao fato de o rei Henrique VII (1457 d.C - 1509 d.C) querer se divorciar de sua esposa, Catarina de Aragão (1485 d.C - 1536 d.C), para se casar com Ana Bolena. Já que o Papa Clemente VII (1478 d.C - 1534 d.C) não cedeu ao pedido de Henrique, o rei da Inglaterra cortou as relações com Roma e se autoproclamou chefe da Igreja da Inglaterra. Após algum tempo, a Igreja Anglicana foi oficializada com Isabel I (1533 d.C - 1603 d.C). </p>
+
+                    <p>Desta forma, uma grande parte da Europa, principalmente o Norte, aceitaram os ideais reformistas. Em contrapartida os soberanos se unem para tentar reagir ao avanço protestante com uma reforma católica, onde encontra seu ápice no Concílio de Trento. </p>
+
+
+                    <span class= "left-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container right-container">
+                <img src= "cores da timeline/blue.png">
+                <div class = "text-box">
+                    <h2>10 - CONCÍLIO DE TRENTO</h2>
+                    <small><b>1545 d.C (Trento, Itália)</b></small>
+                    
+                    <p>Esse concílio realizado na cidade de Trento (antiga cidade do império Gemânico), na Itália, e convocado pelo Papa Paulo III (1468 d.C - 1549 d.C), foi o décimo nono concílio ecumenico da Igreja Católica. Aconteceu entre os anos de 1545 e 1563, e foi o concílio que promulgou o mais completo conjunto de definições doutrinais e regras disciplinares feito até então. </p>
+ 
+                    <p>Mas tudo isso sem trazer nenhuma novidade ou ruptura. Na verdade, o concílio apenas retomou por uma reformulação jurídica e rigorosa as reflexões já existentes que eram deixadas em aberto, codificando também as experiências práticas. </p>
+
+                    <p>Alguns dos aspectos dogmáticos mais importantes que foram definidos no concílio foram: A tradução latina do grego feito por São Jerônimo - conhecida como vulgata - foi considerada como o texto oficial da Bíblia; a reafirmação dos sete sacramentos; a afirmação da presença real de Cristo na Eucaristia, conhecida como transubstanciação; a afirmação que a justificação ocorre pela fé e obras; a defesa do Purgatório; entre outros. </p>
+
+                    <p>O Concílio não foi apenas uma contrarreforma, no sentido de não ter sido feito apenas para reagir aos cismas que estavam acontecendo na Europa (apesar de ser  inegável ter sido esse um dos motivos), mas sua origem está ligada a um movimento dentro da igreja contra os abusos que estavam acontecendo e em procura de reencontrar a fé autêntica que parece que estava sendo perdida aos poucos. </p>
+
+                    <p>Só não foi concretizado anteriormente o concílio por causa da lembrança ainda vivida dos desastres dos dois concílios do século XV, e por causa das ambições do imperador Carlos de Habsburgo e de Francisco I, imperador da França. </p>
+
+                    <p>De facto, depois dos movimentos dos reformadores, que pôs em causa alguns valores religiosos importantes para a  Igreja Católica, e por causa das guerras civis que estavam a acontecer na Europa Central, em parte, por causa dessas diferenças doutrinais, era preciso que a Igreja realizasse um concílio como forma de dar algum retorno para a situação enfrentada. </p>
+
+                    <p>O resultado foi que houve um renascimento católico, ainda que tenha demorado cerca de um século para que o concílio fosse implantado na grande parte dos países europeus. Ainda hoje no contexto católico se utiliza grande parte do sistema de organização e disciplina da Igreja postulada em Trento, como exemplo, nos livros didáticos de ensino doutrinal, conhecidos como “catecismos”.</p>
+
+
+                    <span class= "right-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src= "cores da timeline/yellow.png">
+                <div class = "text-box">
+                    <h2>11 - ALIANÇA EVANGÉLICA</h2>
+                    <small><b>1846 d.C (Londres, Inglaterra)</b></small>
+
+                    <p>No ano de 1846, em Londres, foi fundada a “Evangelical Alliance" (Aliança Evangélica - livre tradução) que é uma associação britânica de igrejas, sociedades e indivíduos cristãos que atua no meio evangélico (grupo de cristãos que enfatizam a autoridade da bíblia). </p>
+
+                    <p>A sua fundação ocorreu em função de reuniões anteriores feitas por clérigos anglicanos e britânicos em reação ao "Movimento de Oxford" que estava a ocorrer na Inglaterra, e que enfatizava a herança católica romana da igreja; após essas reuniões houve em 1846 uma conferência internacional de líderes protestantes que decidiram formar essa associação que iria tentar combater esses vestígios católicos da Igreja da Inglaterra e lutar pela liberdade religiosa, principalmente em relação às atividades da igreja reformada em todo o mundo. </p>
+                    
+                    <p>No total foram cerca de 800 delegados de 50 denominações da América e da Europa que participaram da conferência. </p>
+                    
+                    <p>Embora as mais 70 missões membros  possuam uma grande autonomia, todas elas subscrevem uma base doutrinária comum, denominada “Doutrina da Aliança” que é composto por 9 artigos que afirmam, por exemplo: a inspiração divina, autoridade e suficiência das Escrituras; o direito e o dever do julgamento privado na sua interpretação; a justificação dos pecadores somente pela fé; a obra do Espírito Santo como santificador, entre outros. </p>
+                    
+                    <p>Entre as principais atividades da associação, destaca-se a ajuda em 1951 em estabelecer a “ World Evangelical Fellowship”  que é uma associação mundial de organizações evangélicas sediada nos EUA; e também se tornou em 1980 o principal guarda-chuva para os evangélicos do Reino Unido devido a revitalização de uma nova liderança. </p>
+                    
+
+                    <span class= "left-container-arrow" ></span>
+
+                </div>
+            </div>
+
+            <div class = "container right-container">
+                <img src= "cores da timeline/yellow.png">
+                <div class = "text-box">
+                    <h2>12 - CONCÍLIO VATICANO II</h2>
+                    <small><b>1962 d.C (Vaticano)</b></small>
+                   
+                    <p>O vigésimo primeiro concílio da Igreja Católica Romana que ocorreu entre os anos 1962 e 1965, convocado pelo Papa João XXIII (1881 d.C - 1963 d.C), mas finalizado com seu sucessor, João Paulo VI (1897 d.C - 1978 d.C), tinha como principais propósitos a renovação espiritual e a tentativa de unir novamente os cristãos que haviam se separado da Igreja romana. </p>
+
+                    <p>De forma geral, os decretos que foram revistos pareciam ter um tom mais progressista, como por exemplo, quando os padres conciliares descreveram a Igreja como o povo de Deus, como um peregrino, os padres apostólicos dessa forma deram a justificação teológica para mudar a postura inflexível na qual o pensamento e prática católica tomou desde a Reforma Protestante. </p>
+
+                    <p>No total foram promulgados dezesseis documentos pelos padres conciliares, sendo alguns deles: “Constituição Dogmática sobre a Igreja” ( se refere a tentativa dos padres conciliares de utilizar termos bíblicos ao invés de categorias jurídicas na descrição da igreja); “Constituição  Dogmática sobre a Revelação Divina” (expressa uma tentativa de relacionar o papel das escrituras com a tradição, sendo a sua origem comum a palavra de Deus que foi confiada a Igreja); “Constituição Pastoral sobre a Igreja no Mundo de Hoje” (onde se reconhece que o mundo está passando por um momento de mudança muito grande, e faz uma paralelo entre a identidade da Igreja  com as necessidades da cultura contemporânea);  “Constituição sobre a Sagrada Liturgia” (onde se estabelece o princípio de uma maior participação dos leigos na celebração da missa, e autoriza algumas mudanças nos textos, formas e linguagens utilizadas nas celebrações da missa); entre outros. </p>
+
+                    <p>A mensagem dos documentos do concílio foram sentidas de forma geral  na década de 1970, e resultou em mudanças em quase todas as áreas da Igreja que podem ser notadas até hoje. </p>
+
+
+
+                    <span class= "right-container-arrow" ></span>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </body>
+</html>
